@@ -1,0 +1,22 @@
+{
+  "scripts": {
+    "babel": "./node_modules/.bin/babel src --out-dir dist"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  },
+  "babel": {
+    "presets": [
+      ["@babel/preset-env", {"useBuiltIns": "entry", "corejs": "2"}]
+    ]
+  },
+  "browserslist": [
+    "> 0.1%",
+    "not ie <= 8"
+  ]
+}
